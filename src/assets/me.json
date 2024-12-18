@@ -1,0 +1,8 @@
+{
+    "nombre":"Helena",
+    "apellidos":"GM",
+    "profesion":"informatica" ,
+    "experiencia":[
+        {"nombreEmpresa":"Electrosertec", "descripcion":"FCT grado medio", "duracion":"3 meses"}
+    ]
+}
