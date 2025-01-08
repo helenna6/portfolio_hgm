@@ -3,6 +3,11 @@
     "profesion":"Tecnica informatica" ,
     "edad":18,
     "ocupacion":"Estudiante",
+    "estudios":[
+        {"nombre":"ESO | Colegio Caja Granada ", "descripcion":"Septiembre 2018-Junio 2022"},
+        {"nombre":"FP Grado Medio | I. E. S Hermenegildo Lanz ", "descripcion":"Septiembre 2022-Junio 2024"},
+        {"nombre":"FP Grado Superior | I. E. S Hermenegildo Lanz ", "descripcion":"Septiembre 2024-Actualmente"}
+    ],
     "habilidades": ["Python, ","JavaScript, ","HTML, ","CSS", "Diseño gráfico"],
     "experiencia":[
         {"nombreEmpresa":"Electrosertec ", "descripcion":"FCT grado medio ", "duracion":"3 meses"}
