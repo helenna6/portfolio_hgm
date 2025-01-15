@@ -8,71 +8,57 @@ const { default: meData }= await import('../assets/me.json');
 ---
 
 <Layout>
-	<h1>{meData.nombre}</h1>
-	<br>
-	<section>
-		<h2>Edad</h2>
-		<ul>
-			<li>{meData.edad}</li>
-		</ul>
-	</section>
-	<section>
-		<h2>Ocupación</h2>
-		<ul>
-			<li>{meData.ocupacion}</li>
-		</ul>
-	</section>
-	<section>
-		<h2>Profesión</h2>
-		<ul>
-			<li>{meData.profesion}</li>
-		</ul>
+	<section class="principal">
+		<p class="nombre">{meData.nombre}</p>
+		<p class="profesion">{meData.profesion}</p>
+		<p class="miedad">{meData.edad}</p>
+		<p class="bio">{meData.ocupacion}</p>
 	</section>
 	<section>
 		<h2>Estudios</h2>
-	<ul>
-		<li>{meData.estudios[0].nombre}</li>
-		<p>{meData.estudios[0].descripcion}</p>
-		<li>{meData.estudios[1].nombre}</li>
-		<p>{meData.estudios[1].descripcion}</p>
-		<li>{meData.estudios[2].nombre}</li>
-		<p>{meData.estudios[2].descripcion}</p>
-	</ul>
+		{meData.estudios.map((exp) => (
+			<article class="estudios">
+				<p class="p_estudios">{exp.nombre}</p>
+				<p>{exp.descripcion}</p>
+			</article>
+		))}
 	</section>
 	<section>
 		<h2>Habilidades</h2>
-		<ul>
-			<li>{meData.habilidades[0].nombre}</li>
-			<li>{meData.habilidades[1].nombre}</li>
-			<li>{meData.habilidades[2].nombre}</li>
-			<li>{meData.habilidades[3].nombre}</li>
-			<li>{meData.habilidades[4].nombre}</li>
-		</ul>
+		<div class="envoltura-habilidades">
+			{meData.habilidades.map((exp) => (
+				<article class="habilidades">
+					<p class="habilidad_p">{exp.nombre}</p>
+				</article>
+			))}
+		</div>
 	</section>
 	<section>
 		<h2>Experiencia</h2>
-		<ul>
-			<li>{meData.experiencia[0].nombreEmpresa}</li>
-			<li>{meData.experiencia[0].descripcion}</li>
-			<li>{meData.experiencia[0].duracion}</li>
-		</ul>
+		{meData.experiencia.map((exp) => (
+			<article class="experiencia">
+				<p class="p_empresa">{exp.nombreEmpresa}</p>
+				<p>{exp.descripcion}</p>
+				<p>{exp.duracion}</p>
+			</article>
+		))}
 	</section>
 	<section>
 		<h2>Habilidades Tecnicas</h2>
-		<ul>
-			<li>{meData.habilidades_tecnicas[0].nombre}</li>
-			<li>{meData.habilidades_tecnicas[1].nombre}</li>
-			<li>{meData.habilidades_tecnicas[2].nombre}</li>
-			<li>{meData.habilidades_tecnicas[3].nombre}</li>
-		</ul>
+		{meData.habilidades_tecnicas.map((exp) => (
+			<article class="habilidades_tecnicas">
+				<p class="p_nombre">{exp.nombre}</p>
+				<p>{exp.nivel}</p>
+				<p>{exp.descripción}</p>
+			</article>
+		))}
 	</section>
 	<section>
 		<h2>Herramientas</h2>
-		<ul>
-			<li>{meData.herramientas[0].nombre}</li>
-			<li>{meData.herramientas[1].nombre}</li>
-			<li>{meData.herramientas[2].nombre}</li>
-			<li>{meData.herramientas[3].nombre}</li>
-		</ul>
+		{meData.herramientas.map((exp) => (
+			<article class="herramientas">
+				<p>{exp.nombre}</p>
+			</article>
+		))}
 	</section>
 </Layout>

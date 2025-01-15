@@ -1,8 +1,8 @@
 {
     "nombre":"HelenaGM",
-    "profesion":"Tecnica informatica" ,
-    "edad":18,
-    "ocupacion":"Estudiante",
+    "profesion":" Profesión: Técnica informática" ,
+    "edad": "Edad: 18",
+    "ocupacion":" Ocupación: Estudiante",
     "estudios":[
         {"nombre":"ESO | Colegio Caja Granada ", "descripcion":"Septiembre 2018-Junio 2022"},
         {"nombre":"FP Grado Medio | I. E. S Hermenegildo Lanz ", "descripcion":"Septiembre 2022-Junio 2024"},
@@ -19,10 +19,10 @@
         {"nombreEmpresa":"Electrosertec ", "descripcion":"FCT grado medio ", "duracion":"3 meses"}
     ],
     "habilidades_tecnicas":[
-        {"nombre":"Gestión redes sociales", "nivel":"Avanzado", "descripción":"Tengo habilidades en la creación de contenido llamativo en cuanto amáxima audiencia y repercusión."},
-        {"nombre":"Herramientas digitales", "nivel":"Intermedio", "descripción":"He diseñado proyectos exitosos en redes sociales, aumentando la participación y visibilidad del público general."},
-        {"nombre":"Colaboraciones", "nivel":"Intermedio", "descripción":"He cooperado con perfiles de sobre deportes con un alto número de audiencia de manera correcta y satisfactoria para ambas partes."},
-        {"nombre":"Proyectos", "nivel":"Avanzado", "descripción":"Los proyectos que he ido realizando se pueden ver en mi instagram; @_heelenaa__"}
+        {"nombre":"Gestión redes sociales", "nivel":"Nivel: Avanzado", "descripción":"Tengo habilidades en la creación de contenido llamativo en cuanto amáxima audiencia y repercusión."},
+        {"nombre":"Herramientas digitales", "nivel":"Nivel: Intermedio", "descripción":"He diseñado proyectos exitosos en redes sociales, aumentando la participación y visibilidad del público general."},
+        {"nombre":"Colaboraciones", "nivel":"Nivel: Intermedio", "descripción":"He cooperado con perfiles de sobre deportes con un alto número de audiencia de manera correcta y satisfactoria para ambas partes."},
+        {"nombre":"Proyectos", "nivel":"Nivel: Avanzado", "descripción":"Los proyectos que he ido realizando se pueden ver en mi instagram; @_heelenaa__"}
     ],
     "herramientas":[
         {"nombre":"PosterMyWall"},

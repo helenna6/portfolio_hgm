@@ -1,5 +1,90 @@
 section{
-    max-width: 200px;
+    max-width: 900px;
     margin-right:auto;
     margin-left: auto;
+}
+html{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.estudios{
+    padding: 16px;
+    background-color: #e1e50e;
+    border: 3px solid #000000;
+    border-radius: 16px;
+    margin-bottom: 16px;
+}
+.p_estudios{
+    font-weight: bold;
+}
+.habilidades{
+    padding: 8px;
+    background-color: rgba(222, 36, 23, 0.905);
+    border: 3px solid #000000;
+    border-radius: 16px;
+    width: fit-content;
+
+}
+.habilidad_p{
+    width: fit-content;
+    margin: 0px;
+}
+.envoltura-habilidades{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.experiencia{
+    padding: 16px;
+    background-color: rgba(222, 36, 23, 0.905);
+    border: 3px solid #000000;
+    border-radius: 16px;
+    margin-bottom: 16px;
+}
+.principal{
+    background-color: rgb(255, 43, 43);
+    padding: 8px;
+    border: 3px solid #000000;
+    border-radius: 16px;
+    margin-bottom: 16px;
+}
+.nombre{
+    font-size: 90px;
+    text-align: center;
+    line-height: 0%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.profesion{
+    font-size: 25px;
+    text-align: justify;
+    line-height:0%;
+}
+.bio{
+    font-size: 25px;
+    line-height:0%;
+    text-align: justify;
+}
+.miedad{
+    font-size: 25px;
+    line-height:120%;
+    text-align: justify;
+}
+.p_empresa{
+    font-weight: bold;
+}
+.habilidades_tecnicas{
+    padding: 16px;
+    background-color: #e1e50e;
+    border: 3px solid #000000;
+    border-radius: 16px;
+    margin-bottom: 16px;
+}
+.p_nombre{
+    font-weight: bold;
+}
+.herramientas{
+    padding: 16px;
+    background-color: rgba(222, 36, 23, 0.905);
+    border: 3px solid #000000;
+    border-radius: 16px;
+    margin-bottom: 16px;
 }
