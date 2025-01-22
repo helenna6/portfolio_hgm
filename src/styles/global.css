@@ -2,6 +2,7 @@ section{
     max-width: 900px;
     margin-right:auto;
     margin-left: auto;
+    margin-top: 83px;
 }
 html{
     text-align: justify;
@@ -89,4 +90,18 @@ html{
     border: 3px solid #000000;
     border-radius: 16px;
     margin-bottom: 16px;
+}
+.enlace-proyecto{
+    text-decoration: none;
+    color: black;
+}
+.proyecto{
+    padding: 16px;
+    background-color: rgba(222, 36, 23, 0.905);
+    border: 3px solid #000000;
+    border-radius: 16px;
+    margin-bottom: 16px;
+}
+.proyecto:hover{
+    background-color: rgb(152, 152, 152);
 }

@@ -1,20 +1,41 @@
 ---
 import Welcome from '../components/Welcome.astro';
+import Header from '../components/header.astro';
+import Footer from '../components/footer.astro';
 import Layout from '../layouts/Layout.astro';
 import '../assets/me.json';
 
-const { default: meData }= await import('../assets/me.json');
+interface Project {
+	title: string
+	description: string
+}
+const { default: meData } = await import('../assets/me.json')
+
+const projects = await Astro.glob<any>("../pages/projects/*.md")
+console.log(projects)
 
 ---
 
 <Layout>
-	<section class="principal">
+	<Header />
+	<section class="principal" id="Inicio">
 		<p class="nombre">{meData.nombre}</p>
 		<p class="profesion">{meData.profesion}</p>
 		<p class="miedad">{meData.edad}</p>
 		<p class="bio">{meData.ocupacion}</p>
 	</section>
-	<section>
+	<section id="Proyecto">
+		<h2>Proyectos</h2>
+		{projects.map((project) => (
+			<a href={project.url} class="enlace-proyecto">
+			<article class="proyecto">
+				<h3>{project.frontmatter.title}</h3>
+				<p>{project.frontmatter.descripcion}</p>
+			</article>
+			</a>
+		))}
+	</section>
+	<section id="Estudios">
 		<h2>Estudios</h2>
 		{meData.estudios.map((exp) => (
 			<article class="estudios">
@@ -23,7 +44,7 @@ const { default: meData }= await import('../assets/me.json');
 			</article>
 		))}
 	</section>
-	<section>
+	<section id="Habilidades">
 		<h2>Habilidades</h2>
 		<div class="envoltura-habilidades">
 			{meData.habilidades.map((exp) => (
@@ -33,7 +54,7 @@ const { default: meData }= await import('../assets/me.json');
 			))}
 		</div>
 	</section>
-	<section>
+	<section id="Experiencia">
 		<h2>Experiencia</h2>
 		{meData.experiencia.map((exp) => (
 			<article class="experiencia">
@@ -43,7 +64,7 @@ const { default: meData }= await import('../assets/me.json');
 			</article>
 		))}
 	</section>
-	<section>
+	<section id="Habilidades Tecnicas">
 		<h2>Habilidades Tecnicas</h2>
 		{meData.habilidades_tecnicas.map((exp) => (
 			<article class="habilidades_tecnicas">
@@ -53,7 +74,7 @@ const { default: meData }= await import('../assets/me.json');
 			</article>
 		))}
 	</section>
-	<section>
+	<section id="Herramientas">
 		<h2>Herramientas</h2>
 		{meData.herramientas.map((exp) => (
 			<article class="herramientas">
@@ -61,4 +82,5 @@ const { default: meData }= await import('../assets/me.json');
 			</article>
 		))}
 	</section>
+	<Footer />
 </Layout>
