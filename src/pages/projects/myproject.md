@@ -8,4 +8,4 @@ url: "myproject"
 ## Introducción 
 Esto es un juego simulando el 'memory'
 ### Contenido
-Es muy divertidi y además hay fotos de algunos compañeros del Kung-Fu.
+Es muy divertido y entretenido.
